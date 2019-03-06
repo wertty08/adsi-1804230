@@ -5,9 +5,49 @@
 	<title>elemento de entrada HTML5</title>
 </head>
 <body>
-	<h4>color:</h4>
-	<input type="color">
-	<h4>fecha</h4>
-	<input type="date">
+		<form action="" method="post">
+		<!-- color -->
+		<h4>color:</h4>
+		<input type="color">
+		<!-- fecha -->
+		<h4>fecha</h4>
+		<input type="date">
+		<!-- email -->
+		<h4>email</h4>
+		<input type="email" placeholder="correo electronico" required autofocus>
+			<!-- month -->
+		<h4>mes</h4>
+		<input type="month">
+			<!-- numero -->
+		<h4>numero</h4>
+		<input type="number" min="18" max="96" required>
+			<!-- rango -->
+		<h4>rango</h4>
+		<input type="range" step="5" oninput="orango.value = this.value">
+		<output id="orango"> </output>
+			<!-- buscar -->
+		<h4>buscar</h4>
+		<input type="search">
+			<!-- tiempo -->
+		<h4>tiempo</h4>
+		<input type="time">
+			<!-- url -->
+		<h4>url</h4>
+		<input type="url">
+			<!-- semana -->
+		<h4>semana</h4>
+		<input type="week">
+		<!-- list -->
+		<h4>lista</h4>
+		<input	list=“lenguajes”>	
+		<datalist	id=“lenguajes”>	
+	 		<option	value=“python”>Python</option>	
+			<option	value=“ruby”>Ruby</option>
+			<option	value=“c#”>c sharp</option>	
+			<option	value=“php”>php</option>		
+	</datalist>
+		<br><br>
+		<button type="submit">validar</button>
+	</form>
 </body>
 </html>
