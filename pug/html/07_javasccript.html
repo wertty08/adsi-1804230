@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+    <h3 id="mensaje"></h3>
+    <script>
+      var mensaje = document.getElementById('mensaje')
+      var nombre = prompt('cual es su nombre');
+      if(nombre == 'bryan') {
+      	mensaje.innerHTML = "Bienvenido Sensei: "+nombre;
+      } else {
+      	mensaje.innerHTML = "Bienvenido: "+nombre;
+      }
+    </script>
+  </body>
+</html>
